@@ -26,6 +26,12 @@
 	    	margin:0 auto;
 	    }
 
+	    .fixedwidth p {
+	    	margin:0;
+	    	font-size:2.8em;
+	    	padding:3px;
+	    }
+
 	    .logodiv {
 	    	padding-top:2px;
 	    	float:left;
@@ -91,9 +97,37 @@
 	    	background-repeat:no-repeat;
 	    	background-size: 18px 15px;
 	    	background-position:right center;
+	    }
 
+			#newsbar {
+	    	background-color:#BB1919;
+	    	width:100%;
+	    	height:90px;
+	    	color:white;
+	    }
+
+
+	    #topicmenu {
+	    	background-color:#A91717;
+	    	height:30px;
+	    }
+
+	    #topicmenu ul {
+	    	margin:0;
+	    	padding:0;
+	    	height:25px;
+	    }
+
+	    #topicmenu ul li {
+	    	list-style:none;
+	    	font-size:0.9em;
+	    	border-right:1px solid #E8C2C2;
+	    	float:left;
+	    	padding:8px 14px 10px 14px;
+	    	
 
 	    }
+
 
 	    	
    </style>   
@@ -103,23 +137,16 @@
 	<body>
 		<div id="container">
 			<div id="topbar">
-
 				<div class="fixedwidth">
-
 					<div class="logodiv">
-
 						<img src="images/bbc.png" />
-
 					</div>
 
 					<div class="signin">
-
 						<img src="images/Signin.png" /> Sign in
-
 					</div>
 
 					<div id="topmenudiv">
-
 						<ul>
 							<li>News</li>
 							<li>Sport</li>
@@ -130,15 +157,42 @@
 							<li id="dropdown">More</li>					
 						</ul>
 					</div>
-
-
 				</div>
 
 				<div id="searchdiv">
 					<input type="text" placeholder="Search" />
 				</div>
+			</div>
+
+			<div id="newsbar">
+
+				<div class="fixedwidth">
+					<p>NEWS</p>
+
+					<div id="topicmenu">
+						<ul>
+							<li>Home</li>
+							<li>Video</li>
+							<li>World</li>
+							<li>Asia</li>
+							<li>UK</li>
+							<li>Business</li>
+							<li>Tech</li>
+							<li>Science</li>
+							<li>Magazine</li>
+							<li>Entertainment $ Arts</li>
+							<li>Health</li>
+							<li>World News TV</li>
+							<li style="border-right:none">More</li>
+						</ul>
+					</div>
+				</div>
+
+
 
 			</div>
+
+
 		</div>
 
 
