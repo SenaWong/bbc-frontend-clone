@@ -1,0 +1,58 @@
+
+<!doctype html>
+<html>
+    <head>
+        <title>TEst</title>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <style type="text/css">
+
+        #redcircle {
+            background-color:red;
+            width:150px;
+            height:150px;
+            border-radius:80px;
+        }
+
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>I would like to play a game......</h1>
+        <p>What's my favourite color</p>
+        <input id="answer" />
+        <button id="myButtonz">Are you sure....?</button>
+
+
+        <script>
+
+            document.getElementById("myButtonz").onclick=function(){
+                var colorArray = ["Purple", "Green", "Blue", "Red", "Yellow"],
+
+                x = Math.random() * 5,
+
+                x = Math.floor(x),
+
+                com = colorArray[x];
+
+                if(com===document.getElementById("answer").value){
+                    alert("You are a lucky man...");
+                } else {
+                    alert("That's not right... It is actually " +com);
+
+                }
+                
+            }
+
+        </script>
+        
+        
+
+    </body>
+</html>
